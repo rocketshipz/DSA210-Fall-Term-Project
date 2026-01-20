@@ -35,3 +35,16 @@ The rapid and widespread adoption of generative AI assistants has created a sign
 - Understanding the relationship between AI Assistant Usage and Academic Performance of University Students.
 - Presenting insights through visualizations and statistical findings.
 - Applying data science techniques to derive meaningful conclusions.
+
+## Machine Learning Models
+Evaluated between Linear Regression, Ridge, Lasso, Random Forest and Gradient Boosting. Found out that **Ridge** is the best model with the highest R² score and consistent error metrics.
+- **Metrics:**
+  - **R² Score:** 0.72
+  - **RMSE:** 0.50 
+  - **MAE:** 0.38
+- **Features**
+   - Target: Relative_CGPA (normalized academic performance by department)
+   - Dropped: ID columns & Benchmark_CGPA
+   - Inputs: AI usage intensity (time/frequency/duration) + AI intent (reason) + controls (aptitude, year, department, stress level, aptitude X AItime)
+
+
